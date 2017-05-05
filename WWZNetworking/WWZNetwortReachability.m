@@ -9,16 +9,6 @@
 #import "WWZNetwortReachability.h"
 #import <AFNetworking/AFNetworkReachabilityManager.h>
 
-#ifdef DEBUG // 调试
-
-#define WZLog(fmt, ...) NSLog((@"%s " fmt), __PRETTY_FUNCTION__, ##__VA_ARGS__)
-
-#else // 发布
-
-#define WZLog(...)
-
-#endif
-
 @implementation WWZNetwortReachability
 
 + (void)wwz_networkReachabilityNotReachableBolck:(void(^)())notReachableBlock
@@ -35,7 +25,7 @@
             case AFNetworkReachabilityStatusUnknown: // 未知网络
             case AFNetworkReachabilityStatusNotReachable: // 没有网络(断网)
             {
-                WZLog(@"没有网络");
+//                WZLog(@"没有网络");
                 if (notReachableBlock) {
                     notReachableBlock();
                 }
@@ -45,7 +35,7 @@
             case AFNetworkReachabilityStatusReachableViaWWAN: // 手机自带网络
             case AFNetworkReachabilityStatusReachableViaWiFi: // WIFI
             {
-                WZLog(@"有网络");
+//                WZLog(@"有网络");
                 if (reachableBlock) {
                     reachableBlock();
                 }
@@ -56,7 +46,7 @@
     }];
     
     [mgr startMonitoring];
-    WZLog(@"开始监控网络");
+//    WZLog(@"开始监控网络");
 }
 
 @end

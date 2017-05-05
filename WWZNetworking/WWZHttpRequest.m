@@ -23,15 +23,17 @@ static NSOperationQueue *_operationQueue = nil;
     
     _operationQueue = mgr.operationQueue;
     
+    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/plain", @"text/html", nil];
+    
     mgr.requestSerializer.timeoutInterval = 15;
     
-    [mgr GET:URLString parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [mgr GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
             success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {
             failure(error);
         }
@@ -46,9 +48,12 @@ static NSOperationQueue *_operationQueue = nil;
     // 创建请求管理者
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     _operationQueue = mgr.operationQueue;
+    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/plain", @"text/html", nil];
     mgr.requestSerializer.timeoutInterval = 15;
 
-    [mgr POST:URLString parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [mgr POST:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
         if (success) {
             success(responseObject);

@@ -8,13 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		183CBF231EBC59AE00693604 /* WWZNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 183CBF211EBC59AE00693604 /* WWZNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		183CBF2D1EBC5B7600693604 /* WWZHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 183CBF291EBC5B7600693604 /* WWZHttpRequest.h */; };
+		183CBF2D1EBC5B7600693604 /* WWZHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 183CBF291EBC5B7600693604 /* WWZHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183CBF2E1EBC5B7600693604 /* WWZHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CBF2A1EBC5B7600693604 /* WWZHttpRequest.m */; };
-		183CBF2F1EBC5B7600693604 /* WWZNetwortReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 183CBF2B1EBC5B7600693604 /* WWZNetwortReachability.h */; };
+		183CBF2F1EBC5B7600693604 /* WWZNetwortReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 183CBF2B1EBC5B7600693604 /* WWZNetwortReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183CBF301EBC5B7600693604 /* WWZNetwortReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CBF2C1EBC5B7600693604 /* WWZNetwortReachability.m */; };
+		183CBF381EBC5E7300693604 /* WWZNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CBF371EBC5E7300693604 /* WWZNetworkingTests.m */; };
+		183CBF3A1EBC5E7300693604 /* WWZNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183CBF1E1EBC59AE00693604 /* WWZNetworking.framework */; };
+		7CCA264E3604752DE55191F2 /* libPods-WWZNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052B5AA676489185660AD1B9 /* libPods-WWZNetworking.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		183CBF3B1EBC5E7300693604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 183CBF151EBC59AE00693604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183CBF1D1EBC59AE00693604;
+			remoteInfo = WWZNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		052B5AA676489185660AD1B9 /* libPods-WWZNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WWZNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		183CBF1E1EBC59AE00693604 /* WWZNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWZNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		183CBF211EBC59AE00693604 /* WWZNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWZNetworking.h; sourceTree = "<group>"; };
 		183CBF221EBC59AE00693604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -22,6 +36,11 @@
 		183CBF2A1EBC5B7600693604 /* WWZHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWZHttpRequest.m; sourceTree = "<group>"; };
 		183CBF2B1EBC5B7600693604 /* WWZNetwortReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWZNetwortReachability.h; sourceTree = "<group>"; };
 		183CBF2C1EBC5B7600693604 /* WWZNetwortReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWZNetwortReachability.m; sourceTree = "<group>"; };
+		183CBF351EBC5E7300693604 /* WWZNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWZNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		183CBF371EBC5E7300693604 /* WWZNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWZNetworkingTests.m; sourceTree = "<group>"; };
+		183CBF391EBC5E7300693604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80C0499142DAEC8BA520F547 /* Pods-WWZNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWZNetworking/Pods-WWZNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		A0C31D919D9D91D7F2E3055C /* Pods-WWZNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWZNetworking/Pods-WWZNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCA264E3604752DE55191F2 /* libPods-WWZNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183CBF321EBC5E7300693604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CBF3A1EBC5E7300693604 /* WWZNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				183CBF201EBC59AE00693604 /* WWZNetworking */,
+				183CBF361EBC5E7300693604 /* WWZNetworkingTests */,
 				183CBF1F1EBC59AE00693604 /* Products */,
+				6440E8F42237F1347BE27C70 /* Pods */,
+				781B359CAA5AF223338B9B4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				183CBF1E1EBC59AE00693604 /* WWZNetworking.framework */,
+				183CBF351EBC5E7300693604 /* WWZNetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +86,40 @@
 		183CBF201EBC59AE00693604 /* WWZNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				183CBF211EBC59AE00693604 /* WWZNetworking.h */,
 				183CBF291EBC5B7600693604 /* WWZHttpRequest.h */,
 				183CBF2A1EBC5B7600693604 /* WWZHttpRequest.m */,
 				183CBF2B1EBC5B7600693604 /* WWZNetwortReachability.h */,
 				183CBF2C1EBC5B7600693604 /* WWZNetwortReachability.m */,
-				183CBF211EBC59AE00693604 /* WWZNetworking.h */,
 				183CBF221EBC59AE00693604 /* Info.plist */,
 			);
 			path = WWZNetworking;
+			sourceTree = "<group>";
+		};
+		183CBF361EBC5E7300693604 /* WWZNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				183CBF371EBC5E7300693604 /* WWZNetworkingTests.m */,
+				183CBF391EBC5E7300693604 /* Info.plist */,
+			);
+			path = WWZNetworkingTests;
+			sourceTree = "<group>";
+		};
+		6440E8F42237F1347BE27C70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C31D919D9D91D7F2E3055C /* Pods-WWZNetworking.debug.xcconfig */,
+				80C0499142DAEC8BA520F547 /* Pods-WWZNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		781B359CAA5AF223338B9B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				052B5AA676489185660AD1B9 /* libPods-WWZNetworking.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,10 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 183CBF261EBC59AE00693604 /* Build configuration list for PBXNativeTarget "WWZNetworking" */;
 			buildPhases = (
+				467762E5F7473B0CA1436867 /* [CP] Check Pods Manifest.lock */,
 				183CBF191EBC59AE00693604 /* Sources */,
 				183CBF1A1EBC59AE00693604 /* Frameworks */,
 				183CBF1B1EBC59AE00693604 /* Headers */,
 				183CBF1C1EBC59AE00693604 /* Resources */,
+				B72312AE76CA13A04917FF4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +157,24 @@
 			productName = WWZNetworking;
 			productReference = 183CBF1E1EBC59AE00693604 /* WWZNetworking.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		183CBF341EBC5E7300693604 /* WWZNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183CBF3D1EBC5E7300693604 /* Build configuration list for PBXNativeTarget "WWZNetworkingTests" */;
+			buildPhases = (
+				183CBF311EBC5E7300693604 /* Sources */,
+				183CBF321EBC5E7300693604 /* Frameworks */,
+				183CBF331EBC5E7300693604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				183CBF3C1EBC5E7300693604 /* PBXTargetDependency */,
+			);
+			name = WWZNetworkingTests;
+			productName = WWZNetworkingTests;
+			productReference = 183CBF351EBC5E7300693604 /* WWZNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -108,6 +186,10 @@
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
 					183CBF1D1EBC59AE00693604 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					183CBF341EBC5E7300693604 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -126,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				183CBF1D1EBC59AE00693604 /* WWZNetworking */,
+				183CBF341EBC5E7300693604 /* WWZNetworkingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +221,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		183CBF331EBC5E7300693604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		467762E5F7473B0CA1436867 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B72312AE76CA13A04917FF4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWZNetworking/Pods-WWZNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		183CBF191EBC59AE00693604 /* Sources */ = {
@@ -150,7 +273,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		183CBF311EBC5E7300693604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CBF381EBC5E7300693604 /* WWZNetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		183CBF3C1EBC5E7300693604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 183CBF1D1EBC59AE00693604 /* WWZNetworking */;
+			targetProxy = 183CBF3B1EBC5E7300693604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		183CBF241EBC59AE00693604 /* Debug */ = {
@@ -251,6 +390,7 @@
 		};
 		183CBF271EBC59AE00693604 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C31D919D9D91D7F2E3055C /* Pods-WWZNetworking.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -268,6 +408,7 @@
 		};
 		183CBF281EBC59AE00693604 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C0499142DAEC8BA520F547 /* Pods-WWZNetworking.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -280,6 +421,26 @@
 				PRODUCT_BUNDLE_IDENTIFIER = apple.WWZNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		183CBF3E1EBC5E7300693604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WWZNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.WWZNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		183CBF3F1EBC5E7300693604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WWZNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.WWZNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -303,6 +464,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		183CBF3D1EBC5E7300693604 /* Build configuration list for PBXNativeTarget "WWZNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183CBF3E1EBC5E7300693604 /* Debug */,
+				183CBF3F1EBC5E7300693604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
