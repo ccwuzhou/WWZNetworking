@@ -1,0 +1,27 @@
+{
+  "name": "WWZNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of WWZNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ccwuzhou@163.com/WWZNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ccwuzhou@163.com": "ccwuzhou@163.com"
+  },
+  "source": {
+    "git": "https://github.com/ccwuzhou@163.com/WWZNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WWZNetworking/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
+}

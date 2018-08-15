@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WWZNetworking_Example' do
+  pod 'WWZNetworking', :path => '../'
+
+  target 'WWZNetworking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

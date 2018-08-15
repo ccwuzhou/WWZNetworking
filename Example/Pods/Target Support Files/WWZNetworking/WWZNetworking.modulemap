@@ -1,0 +1,6 @@
+framework module WWZNetworking {
+  umbrella header "WWZNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

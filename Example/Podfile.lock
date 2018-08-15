@@ -1,0 +1,33 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - WWZNetworking (0.1.0):
+    - AFNetworking
+
+DEPENDENCIES:
+  - WWZNetworking (from `../`)
+
+EXTERNAL SOURCES:
+  WWZNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  WWZNetworking: 914c9e6299f5f829e17db0a58fceb0ffe7f272b7
+
+PODFILE CHECKSUM: ba16f584f7d322da61ff02df1043e7d54692bfdd
+
+COCOAPODS: 1.2.1
