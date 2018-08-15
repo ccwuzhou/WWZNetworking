@@ -7,7 +7,7 @@
 //
 
 #import "WWZAppDelegate.h"
-
+#import <WWZNetworking/WWZNetworking.h>
 @implementation WWZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
-  - WWZNetworking (0.1.0):
+  - WWZNetworking (1.0.0):
     - AFNetworking
 
 DEPENDENCIES:
@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
-  WWZNetworking: 914c9e6299f5f829e17db0a58fceb0ffe7f272b7
+  WWZNetworking: 774d9b1c54e106db2c1ec461ff6e426f3a7d5baa
 
 PODFILE CHECKSUM: ba16f584f7d322da61ff02df1043e7d54692bfdd
 

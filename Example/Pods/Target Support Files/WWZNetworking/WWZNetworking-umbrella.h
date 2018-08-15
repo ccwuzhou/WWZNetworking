@@ -11,6 +11,8 @@
 #endif
 
 #import "WWZHttpRequest.h"
+#import "WWZNetworking.h"
+#import "WWZNetwortReachability.h"
 
 FOUNDATION_EXPORT double WWZNetworkingVersionNumber;
 FOUNDATION_EXPORT const unsigned char WWZNetworkingVersionString[];

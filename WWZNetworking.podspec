@@ -23,7 +23,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'WWZNetworking/Classes/**/*'
+s.source_files = 'WWZNetworking/Classes/*.{h,m}'
   
   # s.resource_bundles = {
   #   'WWZNetworking' => ['WWZNetworking/Assets/*.png']
